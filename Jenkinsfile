@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Pasamos a producción') { 
             steps {
-                exit
+               sh 'echo "Movemos al servidor y lo ponemos en producción"'
+
             }
         }
     }
